@@ -1,0 +1,14 @@
+{
+    "python.terminal.activateEnvironment": false,
+    "python.pythonPath": "/Users/antonio/.zerynth3/dist/sys/python/bin/python3",
+    "python.linting.pylintPath": "/Users/antonio/.zerynth3/dist/sys/python/bin/python3",
+    "python.autoComplete.extraPaths": [
+        "/Users/antonio/.zerynth3/dist/libs",
+        "/Users/antonio/.zerynth3/dist/libs/stdlib"
+    ],
+    "python.linting.pylintArgs": [
+        "--rcfile=/Users/antonio/.zerynth3/dist/toolchain/linter/zlintrc"
+    ],
+    "python.languageServer": "Jedi",
+    "python.linting.pylintEnabled": true
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Assunzione" representedClassName="Assunzione" syncable="YES">
+        <attribute name="associabileAlDispenser" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="assunzionePassata" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="effetto" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="erogato" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="orarioProgrammato" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="sintomi" optional="YES" attributeType="String"/>
+        <attribute name="sintomiPresenti" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="assunzioniProgrammate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Informazione" inverseName="assunzioniProgrammate" inverseEntity="Informazione"/>
+    </entity>
+    <entity name="Cura" representedClassName="Cura" syncable="YES">
+        <attribute name="dataFine" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dataInizio" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="descrizione" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="medico" optional="YES" attributeType="String"/>
+        <attribute name="nome" optional="YES" attributeType="String"/>
+        <relationship name="composizione" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Farmaco" inverseName="composizione" inverseEntity="Farmaco"/>
+        <relationship name="prescrizione" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Utente" inverseName="prescrizione" inverseEntity="Utente"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="nome"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Dispenser" representedClassName="Dispenser" syncable="YES">
+        <attribute name="nome" attributeType="String"/>
+        <attribute name="pillolePresenti" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="contenuti" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Farmaco" inverseName="associato" inverseEntity="Farmaco"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="nome"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Farmaco" representedClassName="Farmaco" syncable="YES">
+        <attribute name="aic" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nCompresse" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nome" attributeType="String"/>
+        <attribute name="quantita" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="scadenza" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="associato" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Dispenser" inverseName="contenuti" inverseEntity="Dispenser"/>
+        <relationship name="caratterizzazione" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Informazione" inverseName="caratterizzazione" inverseEntity="Informazione"/>
+        <relationship name="composizione" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cura" inverseName="composizione" inverseEntity="Cura"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="nome"/>
+                <constraint value="composizione"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Informazione" representedClassName="Informazione" syncable="YES">
+        <attribute name="dataInizio" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="durata" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="frequenza" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="assunzioniProgrammate" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Assunzione" inverseName="assunzioniProgrammate" inverseEntity="Assunzione"/>
+        <relationship name="caratterizzazione" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Farmaco" inverseName="caratterizzazione" inverseEntity="Farmaco"/>
+    </entity>
+    <entity name="Utente" representedClassName="Utente" syncable="YES">
+        <attribute name="cognome" attributeType="String"/>
+        <attribute name="dataNascita" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nome" attributeType="String"/>
+        <relationship name="prescrizione" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Cura" inverseName="prescrizione" inverseEntity="Cura"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Assunzione" positionX="73.25311279296875" positionY="-477.2261199951172" width="128" height="178"/>
+        <element name="Cura" positionX="-534.878173828125" positionY="-703.4686279296875" width="128" height="163"/>
+        <element name="Dispenser" positionX="67.71331787109375" positionY="-673.3502044677734" width="128" height="88"/>
+        <element name="Farmaco" positionX="-250.6566772460938" positionY="-733.5396575927734" width="128" height="178"/>
+        <element name="Informazione" positionX="-244.3218383789062" positionY="-417.1688537597656" width="145.73828125" height="119"/>
+        <element name="Utente" positionX="-539.8314208984375" positionY="-407.8289184570312" width="173.30859375" height="118"/>
+    </elements>
+</model>

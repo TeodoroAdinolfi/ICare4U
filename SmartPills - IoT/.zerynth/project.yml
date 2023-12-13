@@ -1,0 +1,12 @@
+---
+board: eva_zm1
+docs: https://docs.zerynth.com/latest/hardware/
+name: ZM1 Evaluation Board
+phys_id: a5803b2f92db1e4608336eefdb3f6ea87a1ee7ed
+pinmap: https://docs.zerynth.com/latest/hardware/
+short_name: ZM1-EVA
+specs: zf
+uid: a5803b2f92db1e4608336eefdb3f6ea87a1ee7ed
+version: v3.0.12
+zdm: {device_id: dev-6wfbtb1bgigs, fleet_id: flt-6wfbl5bb81wp, workspace_id: wks-6wfbl5b18giw}
+...

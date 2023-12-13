@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86379C6C2864A28B0083CF83 /* InfoSintomiFarmaco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86379C6B2864A28B0083CF83 /* InfoSintomiFarmaco.swift */; };
+		8662A0B2285FBA71004E1772 /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8662A0B1285FBA70004E1772 /* InsightsView.swift */; };
+		8662A0B4285FBA9C004E1772 /* registraSintomiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8662A0B3285FBA9C004E1772 /* registraSintomiView.swift */; };
+		866A069928592FD2001D0819 /* GestioneCureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866A069828592FD2001D0819 /* GestioneCureView.swift */; };
+		866E823E28104A640008C25B /* UserDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E823D28104A640008C25B /* UserDataView.swift */; };
+		867474832869A9AF0015B7A8 /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 867474822869A9AF0015B7A8 /* CareKit */; };
+		867474852869A9B30015B7A8 /* CareKitFHIR in Frameworks */ = {isa = PBXBuildFile; productRef = 867474842869A9B30015B7A8 /* CareKitFHIR */; };
+		867474872869A9B50015B7A8 /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 867474862869A9B50015B7A8 /* CareKitStore */; };
+		867474892869A9B90015B7A8 /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 867474882869A9B90015B7A8 /* CareKitUI */; };
+		868A707A2862F37900342847 /* InfoFarmaciView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868A70792862F37900342847 /* InfoFarmaciView.swift */; };
+		8693ABC728496E7C00C839E4 /* CareKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693ABC628496E7C00C839E4 /* CareKitView.swift */; };
+		8693ABC928496EFE00C839E4 /* CareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693ABC828496EFE00C839E4 /* CareController.swift */; };
+		A94A8D1F285A743700B355B5 /* CocoaMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = A94A8D1E285A743700B355B5 /* CocoaMQTT */; };
+		A94A8D24285A747D00B355B5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A8D23285A747D00B355B5 /* LoadingView.swift */; };
+		A94A8D26285A749400B355B5 /* MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A8D25285A749400B355B5 /* MQTT.swift */; };
+		A95CAA92280F0887001CC96B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CAA91280F0887001CC96B /* WelcomeView.swift */; };
+		A9ADA1072862F833001077CA /* NewPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ADA1062862F833001077CA /* NewPillView.swift */; };
+		A9ADA10B286313C0001077CA /* PickPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ADA10A286313C0001077CA /* PickPillView.swift */; };
+		A9ADA10D28632A3C001077CA /* ProgrammedPillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ADA10C28632A3C001077CA /* ProgrammedPillsView.swift */; };
+		A9ADA10F286354DB001077CA /* HistoricalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ADA10E286354DB001077CA /* HistoricalView.swift */; };
+		A9ADA11128635B0B001077CA /* StatusDispenserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ADA11028635B0B001077CA /* StatusDispenserView.swift */; };
+		A9ADA1132863779A001077CA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ADA1122863779A001077CA /* ErrorView.swift */; };
+		A9ADA11728643A61001077CA /* CardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ADA11628643A61001077CA /* CardItemView.swift */; };
+		A9ADA11B28646A10001077CA /* CardItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ADA11A28646A10001077CA /* CardItemData.swift */; };
+		A9C6731A2865A1430053E859 /* InfoAddPillClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C673192865A1430053E859 /* InfoAddPillClass.swift */; };
+		A9D17E5B2862367300F3BCCA /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D17E5A2862367300F3BCCA /* ActionView.swift */; };
+		A9F853EC286663B600E63775 /* InfoProgrammedPillsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F853EB286663B600E63775 /* InfoProgrammedPillsClass.swift */; };
+		A9F853EE286706DD00E63775 /* InfoHistoricalPillsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F853ED286706DD00E63775 /* InfoHistoricalPillsClass.swift */; };
+		A9F952802868B74600F4E0A3 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9527F2868B74600F4E0A3 /* ControlView.swift */; };
+		E2100BD328636F1D000D57FD /* Assunzione+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2100BCF28636F1D000D57FD /* Assunzione+CoreDataClass.swift */; };
+		E2100BD428636F1D000D57FD /* Assunzione+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2100BD028636F1D000D57FD /* Assunzione+CoreDataProperties.swift */; };
+		E2100BD528636F1D000D57FD /* Informazione+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2100BD128636F1D000D57FD /* Informazione+CoreDataClass.swift */; };
+		E2100BD628636F1D000D57FD /* Informazione+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2100BD228636F1D000D57FD /* Informazione+CoreDataProperties.swift */; };
+		E2164822280EBB9400E10F16 /* ICare4UApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2164821280EBB9400E10F16 /* ICare4UApp.swift */; };
+		E2164824280EBB9400E10F16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2164823280EBB9400E10F16 /* ContentView.swift */; };
+		E2164826280EBB9500E10F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2164825280EBB9500E10F16 /* Assets.xcassets */; };
+		E2164829280EBB9500E10F16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2164828280EBB9500E10F16 /* Preview Assets.xcassets */; };
+		E216482B280EBB9500E10F16 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E216482A280EBB9500E10F16 /* Persistence.swift */; };
+		E216482E280EBB9500E10F16 /* ICare4U.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E216482C280EBB9500E10F16 /* ICare4U.xcdatamodeld */; };
+		E2164838280EBB9500E10F16 /* ICare4UTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2164837280EBB9500E10F16 /* ICare4UTests.swift */; };
+		E2164842280EBB9500E10F16 /* ICare4UUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2164841280EBB9500E10F16 /* ICare4UUITests.swift */; };
+		E2164844280EBB9500E10F16 /* ICare4UUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2164843280EBB9500E10F16 /* ICare4UUITestsLaunchTests.swift */; };
+		E28EA709285BC4EA002D341E /* infoCuraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EA708285BC4EA002D341E /* infoCuraView.swift */; };
+		E28EA70B285BD2FD002D341E /* addCuraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EA70A285BD2FD002D341E /* addCuraView.swift */; };
+		E2B141A728317AC6001017A1 /* Dispenser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B141A328317AC6001017A1 /* Dispenser+CoreDataClass.swift */; };
+		E2B141A828317AC6001017A1 /* Dispenser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B141A428317AC6001017A1 /* Dispenser+CoreDataProperties.swift */; };
+		E2CA4FCB2818507200FCFD77 /* Farmaco+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA4FBD2818507200FCFD77 /* Farmaco+CoreDataClass.swift */; };
+		E2CA4FCC2818507200FCFD77 /* Farmaco+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA4FBE2818507200FCFD77 /* Farmaco+CoreDataProperties.swift */; };
+		E2CA4FD52818507200FCFD77 /* Cura+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA4FC72818507200FCFD77 /* Cura+CoreDataClass.swift */; };
+		E2CA4FD62818507200FCFD77 /* Cura+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA4FC82818507200FCFD77 /* Cura+CoreDataProperties.swift */; };
+		E2CA4FD72818507200FCFD77 /* Utente+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA4FC92818507200FCFD77 /* Utente+CoreDataClass.swift */; };
+		E2CA4FD82818507200FCFD77 /* Utente+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA4FCA2818507200FCFD77 /* Utente+CoreDataProperties.swift */; };
+		E2CA4FDA2818689300FCFD77 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CA4FD92818689300FCFD77 /* CoreDataController.swift */; };
+		E2D25BE228622D8C00B49E07 /* addFarmacoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D25BE128622D8C00B49E07 /* addFarmacoView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2164834280EBB9500E10F16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2164816280EBB9400E10F16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E216481D280EBB9400E10F16;
+			remoteInfo = ICare4U;
+		};
+		E216483E280EBB9500E10F16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2164816280EBB9400E10F16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E216481D280EBB9400E10F16;
+			remoteInfo = ICare4U;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		86379C6B2864A28B0083CF83 /* InfoSintomiFarmaco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSintomiFarmaco.swift; sourceTree = "<group>"; };
+		8662A0B1285FBA70004E1772 /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		8662A0B3285FBA9C004E1772 /* registraSintomiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registraSintomiView.swift; sourceTree = "<group>"; };
+		866A069828592FD2001D0819 /* GestioneCureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestioneCureView.swift; sourceTree = "<group>"; };
+		866E823D28104A640008C25B /* UserDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataView.swift; sourceTree = "<group>"; };
+		8674748A2869B6590015B7A8 /* CareKit-main */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "CareKit-main"; path = "../CareKit-main"; sourceTree = "<group>"; };
+		868A70792862F37900342847 /* InfoFarmaciView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoFarmaciView.swift; sourceTree = "<group>"; };
+		8693ABC628496E7C00C839E4 /* CareKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitView.swift; sourceTree = "<group>"; };
+		8693ABC828496EFE00C839E4 /* CareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareController.swift; sourceTree = "<group>"; };
+		A94A8D23285A747D00B355B5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A94A8D25285A749400B355B5 /* MQTT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTT.swift; sourceTree = "<group>"; };
+		A95CAA91280F0887001CC96B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeView.swift; path = ICare4U/Inizializzazione/WelcomeView.swift; sourceTree = SOURCE_ROOT; };
+		A9ADA1062862F833001077CA /* NewPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPillView.swift; sourceTree = "<group>"; };
+		A9ADA10A286313C0001077CA /* PickPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickPillView.swift; sourceTree = "<group>"; };
+		A9ADA10C28632A3C001077CA /* ProgrammedPillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammedPillsView.swift; sourceTree = "<group>"; };
+		A9ADA10E286354DB001077CA /* HistoricalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalView.swift; sourceTree = "<group>"; };
+		A9ADA11028635B0B001077CA /* StatusDispenserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDispenserView.swift; sourceTree = "<group>"; };
+		A9ADA1122863779A001077CA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		A9ADA11628643A61001077CA /* CardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemView.swift; sourceTree = "<group>"; };
+		A9ADA11A28646A10001077CA /* CardItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemData.swift; sourceTree = "<group>"; };
+		A9C673192865A1430053E859 /* InfoAddPillClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAddPillClass.swift; sourceTree = "<group>"; };
+		A9D17E5A2862367300F3BCCA /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		A9F853EB286663B600E63775 /* InfoProgrammedPillsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoProgrammedPillsClass.swift; sourceTree = "<group>"; };
+		A9F853ED286706DD00E63775 /* InfoHistoricalPillsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHistoricalPillsClass.swift; sourceTree = "<group>"; };
+		A9F9527F2868B74600F4E0A3 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		E2100BCF28636F1D000D57FD /* Assunzione+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assunzione+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E2100BD028636F1D000D57FD /* Assunzione+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assunzione+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E2100BD128636F1D000D57FD /* Informazione+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Informazione+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E2100BD228636F1D000D57FD /* Informazione+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Informazione+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E216481E280EBB9400E10F16 /* ICare4U.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICare4U.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2164821280EBB9400E10F16 /* ICare4UApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICare4UApp.swift; sourceTree = "<group>"; };
+		E2164823280EBB9400E10F16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E2164825280EBB9500E10F16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2164828280EBB9500E10F16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E216482A280EBB9500E10F16 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		E216482D280EBB9500E10F16 /* ICare4U.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ICare4U.xcdatamodel; sourceTree = "<group>"; };
+		E2164833280EBB9500E10F16 /* ICare4UTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICare4UTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2164837280EBB9500E10F16 /* ICare4UTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICare4UTests.swift; sourceTree = "<group>"; };
+		E216483D280EBB9500E10F16 /* ICare4UUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICare4UUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2164841280EBB9500E10F16 /* ICare4UUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICare4UUITests.swift; sourceTree = "<group>"; };
+		E2164843280EBB9500E10F16 /* ICare4UUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICare4UUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E28EA708285BC4EA002D341E /* infoCuraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoCuraView.swift; sourceTree = "<group>"; };
+		E28EA70A285BD2FD002D341E /* addCuraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addCuraView.swift; sourceTree = "<group>"; };
+		E2B141A328317AC6001017A1 /* Dispenser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispenser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E2B141A428317AC6001017A1 /* Dispenser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispenser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E2CA4FBD2818507200FCFD77 /* Farmaco+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Farmaco+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E2CA4FBE2818507200FCFD77 /* Farmaco+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Farmaco+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E2CA4FC72818507200FCFD77 /* Cura+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cura+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E2CA4FC82818507200FCFD77 /* Cura+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cura+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E2CA4FC92818507200FCFD77 /* Utente+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utente+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E2CA4FCA2818507200FCFD77 /* Utente+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utente+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E2CA4FD92818689300FCFD77 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		E2D25BE128622D8C00B49E07 /* addFarmacoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addFarmacoView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E216481B280EBB9400E10F16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				867474872869A9B50015B7A8 /* CareKitStore in Frameworks */,
+				867474832869A9AF0015B7A8 /* CareKit in Frameworks */,
+				867474892869A9B90015B7A8 /* CareKitUI in Frameworks */,
+				867474852869A9B30015B7A8 /* CareKitFHIR in Frameworks */,
+				A94A8D1F285A743700B355B5 /* CocoaMQTT in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2164830280EBB9500E10F16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E216483A280EBB9500E10F16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		860EF1122874462E00390C71 /* Cure */ = {
+			isa = PBXGroup;
+			children = (
+				866A069828592FD2001D0819 /* GestioneCureView.swift */,
+				8693ABC828496EFE00C839E4 /* CareController.swift */,
+				8693ABC628496E7C00C839E4 /* CareKitView.swift */,
+			);
+			path = Cure;
+			sourceTree = "<group>";
+		};
+		8674747F2869A9A40015B7A8 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				8674748A2869B6590015B7A8 /* CareKit-main */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		867474812869A9AF0015B7A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		868A70782862F2ED00342847 /* Insights */ = {
+			isa = PBXGroup;
+			children = (
+				8662A0B3285FBA9C004E1772 /* registraSintomiView.swift */,
+				8662A0B1285FBA70004E1772 /* InsightsView.swift */,
+				868A70792862F37900342847 /* InfoFarmaciView.swift */,
+				86379C6B2864A28B0083CF83 /* InfoSintomiFarmaco.swift */,
+			);
+			path = Insights;
+			sourceTree = "<group>";
+		};
+		8693ABC128496C2E00C839E4 /* CareKit */ = {
+			isa = PBXGroup;
+			children = (
+				860EF1122874462E00390C71 /* Cure */,
+				868A70782862F2ED00342847 /* Insights */,
+				E2D25BE028622D5700B49E07 /* Gestione */,
+			);
+			path = CareKit;
+			sourceTree = "<group>";
+		};
+		A94A8D20285A744A00B355B5 /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				A9ADA1052862F7FF001077CA /* ManageViews */,
+				A94A8D23285A747D00B355B5 /* LoadingView.swift */,
+				A94A8D25285A749400B355B5 /* MQTT.swift */,
+				A9D17E5A2862367300F3BCCA /* ActionView.swift */,
+				A9ADA11628643A61001077CA /* CardItemView.swift */,
+				A9ADA11A28646A10001077CA /* CardItemData.swift */,
+				A9F9527F2868B74600F4E0A3 /* ControlView.swift */,
+			);
+			path = Connectivity;
+			sourceTree = "<group>";
+		};
+		A9ADA1052862F7FF001077CA /* ManageViews */ = {
+			isa = PBXGroup;
+			children = (
+				A9F853F3286731C100E63775 /* Preleva */,
+				A9F853F2286731B500E63775 /* Stato */,
+				A9F853F12867318B00E63775 /* Storico */,
+				A9F853F02867317200E63775 /* Pianificate */,
+				A9F853EF2867313B00E63775 /* Programma */,
+				A9ADA1122863779A001077CA /* ErrorView.swift */,
+			);
+			path = ManageViews;
+			sourceTree = "<group>";
+		};
+		A9F853EF2867313B00E63775 /* Programma */ = {
+			isa = PBXGroup;
+			children = (
+				A9ADA1062862F833001077CA /* NewPillView.swift */,
+				A9C673192865A1430053E859 /* InfoAddPillClass.swift */,
+			);
+			path = Programma;
+			sourceTree = "<group>";
+		};
+		A9F853F02867317200E63775 /* Pianificate */ = {
+			isa = PBXGroup;
+			children = (
+				A9ADA10C28632A3C001077CA /* ProgrammedPillsView.swift */,
+				A9F853EB286663B600E63775 /* InfoProgrammedPillsClass.swift */,
+			);
+			path = Pianificate;
+			sourceTree = "<group>";
+		};
+		A9F853F12867318B00E63775 /* Storico */ = {
+			isa = PBXGroup;
+			children = (
+				A9ADA10E286354DB001077CA /* HistoricalView.swift */,
+				A9F853ED286706DD00E63775 /* InfoHistoricalPillsClass.swift */,
+			);
+			path = Storico;
+			sourceTree = "<group>";
+		};
+		A9F853F2286731B500E63775 /* Stato */ = {
+			isa = PBXGroup;
+			children = (
+				A9ADA11028635B0B001077CA /* StatusDispenserView.swift */,
+			);
+			path = Stato;
+			sourceTree = "<group>";
+		};
+		A9F853F3286731C100E63775 /* Preleva */ = {
+			isa = PBXGroup;
+			children = (
+				A9ADA10A286313C0001077CA /* PickPillView.swift */,
+			);
+			path = Preleva;
+			sourceTree = "<group>";
+		};
+		E2164815280EBB9400E10F16 = {
+			isa = PBXGroup;
+			children = (
+				8674747F2869A9A40015B7A8 /* Packages */,
+				E2164820280EBB9400E10F16 /* ICare4U */,
+				E2164836280EBB9500E10F16 /* ICare4UTests */,
+				E2164840280EBB9500E10F16 /* ICare4UUITests */,
+				E216481F280EBB9400E10F16 /* Products */,
+				867474812869A9AF0015B7A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E216481F280EBB9400E10F16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E216481E280EBB9400E10F16 /* ICare4U.app */,
+				E2164833280EBB9500E10F16 /* ICare4UTests.xctest */,
+				E216483D280EBB9500E10F16 /* ICare4UUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2164820280EBB9400E10F16 /* ICare4U */ = {
+			isa = PBXGroup;
+			children = (
+				A94A8D20285A744A00B355B5 /* Connectivity */,
+				8693ABC128496C2E00C839E4 /* CareKit */,
+				E224C8DC281FCCD8008DB79A /* CoreDataClasses */,
+				E2B1419F282EEF44001017A1 /* Inizializzazione */,
+				E2164821280EBB9400E10F16 /* ICare4UApp.swift */,
+				E2164825280EBB9500E10F16 /* Assets.xcassets */,
+				E2164827280EBB9500E10F16 /* Preview Content */,
+			);
+			path = ICare4U;
+			sourceTree = "<group>";
+		};
+		E2164827280EBB9500E10F16 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E2164828280EBB9500E10F16 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E2164836280EBB9500E10F16 /* ICare4UTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2164837280EBB9500E10F16 /* ICare4UTests.swift */,
+			);
+			path = ICare4UTests;
+			sourceTree = "<group>";
+		};
+		E2164840280EBB9500E10F16 /* ICare4UUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2164841280EBB9500E10F16 /* ICare4UUITests.swift */,
+				E2164843280EBB9500E10F16 /* ICare4UUITestsLaunchTests.swift */,
+			);
+			path = ICare4UUITests;
+			sourceTree = "<group>";
+		};
+		E224C8DC281FCCD8008DB79A /* CoreDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E224C8DD281FCD38008DB79A /* CoreDataModelClasses */,
+				E2CA4FD92818689300FCFD77 /* CoreDataController.swift */,
+				E216482C280EBB9500E10F16 /* ICare4U.xcdatamodeld */,
+				E216482A280EBB9500E10F16 /* Persistence.swift */,
+			);
+			path = CoreDataClasses;
+			sourceTree = "<group>";
+		};
+		E224C8DD281FCD38008DB79A /* CoreDataModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E2B14197282EE8B3001017A1 /* CoreDataClass */,
+				E2B141A0282EEF75001017A1 /* CoreDataProperties */,
+			);
+			path = CoreDataModelClasses;
+			sourceTree = "<group>";
+		};
+		E2B14197282EE8B3001017A1 /* CoreDataClass */ = {
+			isa = PBXGroup;
+			children = (
+				E2100BD128636F1D000D57FD /* Informazione+CoreDataClass.swift */,
+				E2B141A328317AC6001017A1 /* Dispenser+CoreDataClass.swift */,
+				E2100BCF28636F1D000D57FD /* Assunzione+CoreDataClass.swift */,
+				E2CA4FBD2818507200FCFD77 /* Farmaco+CoreDataClass.swift */,
+				E2CA4FC72818507200FCFD77 /* Cura+CoreDataClass.swift */,
+				E2CA4FC92818507200FCFD77 /* Utente+CoreDataClass.swift */,
+			);
+			path = CoreDataClass;
+			sourceTree = "<group>";
+		};
+		E2B1419F282EEF44001017A1 /* Inizializzazione */ = {
+			isa = PBXGroup;
+			children = (
+				866E823D28104A640008C25B /* UserDataView.swift */,
+				A95CAA91280F0887001CC96B /* WelcomeView.swift */,
+				E2164823280EBB9400E10F16 /* ContentView.swift */,
+			);
+			path = Inizializzazione;
+			sourceTree = "<group>";
+		};
+		E2B141A0282EEF75001017A1 /* CoreDataProperties */ = {
+			isa = PBXGroup;
+			children = (
+				E2B141A428317AC6001017A1 /* Dispenser+CoreDataProperties.swift */,
+				E2100BD228636F1D000D57FD /* Informazione+CoreDataProperties.swift */,
+				E2100BD028636F1D000D57FD /* Assunzione+CoreDataProperties.swift */,
+				E2CA4FBE2818507200FCFD77 /* Farmaco+CoreDataProperties.swift */,
+				E2CA4FC82818507200FCFD77 /* Cura+CoreDataProperties.swift */,
+				E2CA4FCA2818507200FCFD77 /* Utente+CoreDataProperties.swift */,
+			);
+			path = CoreDataProperties;
+			sourceTree = "<group>";
+		};
+		E2D25BE028622D5700B49E07 /* Gestione */ = {
+			isa = PBXGroup;
+			children = (
+				E28EA70A285BD2FD002D341E /* addCuraView.swift */,
+				E28EA708285BC4EA002D341E /* infoCuraView.swift */,
+				E2D25BE128622D8C00B49E07 /* addFarmacoView.swift */,
+			);
+			path = Gestione;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E216481D280EBB9400E10F16 /* ICare4U */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2164847280EBB9500E10F16 /* Build configuration list for PBXNativeTarget "ICare4U" */;
+			buildPhases = (
+				E216481A280EBB9400E10F16 /* Sources */,
+				E216481B280EBB9400E10F16 /* Frameworks */,
+				E216481C280EBB9400E10F16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ICare4U;
+			packageProductDependencies = (
+				A94A8D1E285A743700B355B5 /* CocoaMQTT */,
+				867474822869A9AF0015B7A8 /* CareKit */,
+				867474842869A9B30015B7A8 /* CareKitFHIR */,
+				867474862869A9B50015B7A8 /* CareKitStore */,
+				867474882869A9B90015B7A8 /* CareKitUI */,
+			);
+			productName = ICare4U;
+			productReference = E216481E280EBB9400E10F16 /* ICare4U.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2164832280EBB9500E10F16 /* ICare4UTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E216484A280EBB9500E10F16 /* Build configuration list for PBXNativeTarget "ICare4UTests" */;
+			buildPhases = (
+				E216482F280EBB9500E10F16 /* Sources */,
+				E2164830280EBB9500E10F16 /* Frameworks */,
+				E2164831280EBB9500E10F16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2164835280EBB9500E10F16 /* PBXTargetDependency */,
+			);
+			name = ICare4UTests;
+			productName = ICare4UTests;
+			productReference = E2164833280EBB9500E10F16 /* ICare4UTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E216483C280EBB9500E10F16 /* ICare4UUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E216484D280EBB9500E10F16 /* Build configuration list for PBXNativeTarget "ICare4UUITests" */;
+			buildPhases = (
+				E2164839280EBB9500E10F16 /* Sources */,
+				E216483A280EBB9500E10F16 /* Frameworks */,
+				E216483B280EBB9500E10F16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E216483F280EBB9500E10F16 /* PBXTargetDependency */,
+			);
+			name = ICare4UUITests;
+			productName = ICare4UUITests;
+			productReference = E216483D280EBB9500E10F16 /* ICare4UUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2164816280EBB9400E10F16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					E216481D280EBB9400E10F16 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					E2164832280EBB9500E10F16 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E216481D280EBB9400E10F16;
+					};
+					E216483C280EBB9500E10F16 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E216481D280EBB9400E10F16;
+					};
+				};
+			};
+			buildConfigurationList = E2164819280EBB9400E10F16 /* Build configuration list for PBXProject "ICare4U" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = it;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				it,
+				en,
+				Base,
+			);
+			mainGroup = E2164815280EBB9400E10F16;
+			packageReferences = (
+				A94A8D1D285A743700B355B5 /* XCRemoteSwiftPackageReference "CocoaMQTT" */,
+			);
+			productRefGroup = E216481F280EBB9400E10F16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E216481D280EBB9400E10F16 /* ICare4U */,
+				E2164832280EBB9500E10F16 /* ICare4UTests */,
+				E216483C280EBB9500E10F16 /* ICare4UUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E216481C280EBB9400E10F16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2164829280EBB9500E10F16 /* Preview Assets.xcassets in Resources */,
+				E2164826280EBB9500E10F16 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2164831280EBB9500E10F16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E216483B280EBB9500E10F16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E216481A280EBB9400E10F16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86379C6C2864A28B0083CF83 /* InfoSintomiFarmaco.swift in Sources */,
+				A9ADA11128635B0B001077CA /* StatusDispenserView.swift in Sources */,
+				A9ADA10B286313C0001077CA /* PickPillView.swift in Sources */,
+				A9D17E5B2862367300F3BCCA /* ActionView.swift in Sources */,
+				A9F952802868B74600F4E0A3 /* ControlView.swift in Sources */,
+				A9ADA1132863779A001077CA /* ErrorView.swift in Sources */,
+				E2CA4FD52818507200FCFD77 /* Cura+CoreDataClass.swift in Sources */,
+				868A707A2862F37900342847 /* InfoFarmaciView.swift in Sources */,
+				A95CAA92280F0887001CC96B /* WelcomeView.swift in Sources */,
+				E2B141A828317AC6001017A1 /* Dispenser+CoreDataProperties.swift in Sources */,
+				E2CA4FD62818507200FCFD77 /* Cura+CoreDataProperties.swift in Sources */,
+				E2100BD528636F1D000D57FD /* Informazione+CoreDataClass.swift in Sources */,
+				E2CA4FDA2818689300FCFD77 /* CoreDataController.swift in Sources */,
+				E2CA4FD82818507200FCFD77 /* Utente+CoreDataProperties.swift in Sources */,
+				A9ADA10D28632A3C001077CA /* ProgrammedPillsView.swift in Sources */,
+				E28EA70B285BD2FD002D341E /* addCuraView.swift in Sources */,
+				8662A0B4285FBA9C004E1772 /* registraSintomiView.swift in Sources */,
+				A9ADA11B28646A10001077CA /* CardItemData.swift in Sources */,
+				E2D25BE228622D8C00B49E07 /* addFarmacoView.swift in Sources */,
+				E216482B280EBB9500E10F16 /* Persistence.swift in Sources */,
+				E216482E280EBB9500E10F16 /* ICare4U.xcdatamodeld in Sources */,
+				A94A8D24285A747D00B355B5 /* LoadingView.swift in Sources */,
+				E2100BD328636F1D000D57FD /* Assunzione+CoreDataClass.swift in Sources */,
+				8693ABC928496EFE00C839E4 /* CareController.swift in Sources */,
+				A9F853EE286706DD00E63775 /* InfoHistoricalPillsClass.swift in Sources */,
+				E2100BD628636F1D000D57FD /* Informazione+CoreDataProperties.swift in Sources */,
+				E2CA4FCB2818507200FCFD77 /* Farmaco+CoreDataClass.swift in Sources */,
+				8662A0B2285FBA71004E1772 /* InsightsView.swift in Sources */,
+				8693ABC728496E7C00C839E4 /* CareKitView.swift in Sources */,
+				866A069928592FD2001D0819 /* GestioneCureView.swift in Sources */,
+				E2CA4FD72818507200FCFD77 /* Utente+CoreDataClass.swift in Sources */,
+				A94A8D26285A749400B355B5 /* MQTT.swift in Sources */,
+				E2164824280EBB9400E10F16 /* ContentView.swift in Sources */,
+				E2CA4FCC2818507200FCFD77 /* Farmaco+CoreDataProperties.swift in Sources */,
+				E2B141A728317AC6001017A1 /* Dispenser+CoreDataClass.swift in Sources */,
+				A9F853EC286663B600E63775 /* InfoProgrammedPillsClass.swift in Sources */,
+				A9C6731A2865A1430053E859 /* InfoAddPillClass.swift in Sources */,
+				A9ADA1072862F833001077CA /* NewPillView.swift in Sources */,
+				E28EA709285BC4EA002D341E /* infoCuraView.swift in Sources */,
+				E2100BD428636F1D000D57FD /* Assunzione+CoreDataProperties.swift in Sources */,
+				E2164822280EBB9400E10F16 /* ICare4UApp.swift in Sources */,
+				A9ADA11728643A61001077CA /* CardItemView.swift in Sources */,
+				A9ADA10F286354DB001077CA /* HistoricalView.swift in Sources */,
+				866E823E28104A640008C25B /* UserDataView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E216482F280EBB9500E10F16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2164838280EBB9500E10F16 /* ICare4UTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2164839280EBB9500E10F16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2164844280EBB9500E10F16 /* ICare4UUITestsLaunchTests.swift in Sources */,
+				E2164842280EBB9500E10F16 /* ICare4UUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2164835280EBB9500E10F16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E216481D280EBB9400E10F16 /* ICare4U */;
+			targetProxy = E2164834280EBB9500E10F16 /* PBXContainerItemProxy */;
+		};
+		E216483F280EBB9500E10F16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E216481D280EBB9400E10F16 /* ICare4U */;
+			targetProxy = E216483E280EBB9500E10F16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E2164845280EBB9500E10F16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2164846280EBB9500E10F16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2164848280EBB9500E10F16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ICare4U/Preview Content\"";
+				DEVELOPMENT_TEAM = J4TN5ZHW6N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.ICare4UE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E2164849280EBB9500E10F16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ICare4U/Preview Content\"";
+				DEVELOPMENT_TEAM = J4TN5ZHW6N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.ICare4UE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E216484B280EBB9500E10F16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5259D95TX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.ICare4UTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ICare4U.app/ICare4U";
+			};
+			name = Debug;
+		};
+		E216484C280EBB9500E10F16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5259D95TX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.ICare4UTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ICare4U.app/ICare4U";
+			};
+			name = Release;
+		};
+		E216484E280EBB9500E10F16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5259D95TX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.ICare4UUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ICare4U;
+			};
+			name = Debug;
+		};
+		E216484F280EBB9500E10F16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5259D95TX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = it.unisa.applefoundationprogram.ICare4UUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ICare4U;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2164819280EBB9400E10F16 /* Build configuration list for PBXProject "ICare4U" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2164845280EBB9500E10F16 /* Debug */,
+				E2164846280EBB9500E10F16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2164847280EBB9500E10F16 /* Build configuration list for PBXNativeTarget "ICare4U" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2164848280EBB9500E10F16 /* Debug */,
+				E2164849280EBB9500E10F16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E216484A280EBB9500E10F16 /* Build configuration list for PBXNativeTarget "ICare4UTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E216484B280EBB9500E10F16 /* Debug */,
+				E216484C280EBB9500E10F16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E216484D280EBB9500E10F16 /* Build configuration list for PBXNativeTarget "ICare4UUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E216484E280EBB9500E10F16 /* Debug */,
+				E216484F280EBB9500E10F16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A94A8D1D285A743700B355B5 /* XCRemoteSwiftPackageReference "CocoaMQTT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emqx/CocoaMQTT.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		867474822869A9AF0015B7A8 /* CareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CareKit;
+		};
+		867474842869A9B30015B7A8 /* CareKitFHIR */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CareKitFHIR;
+		};
+		867474862869A9B50015B7A8 /* CareKitStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CareKitStore;
+		};
+		867474882869A9B90015B7A8 /* CareKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CareKitUI;
+		};
+		A94A8D1E285A743700B355B5 /* CocoaMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A94A8D1D285A743700B355B5 /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
+			productName = CocoaMQTT;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		E216482C280EBB9500E10F16 /* ICare4U.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E216482D280EBB9500E10F16 /* ICare4U.xcdatamodel */,
+			);
+			currentVersion = E216482D280EBB9500E10F16 /* ICare4U.xcdatamodel */;
+			path = ICare4U.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E2164816280EBB9400E10F16 /* Project object */;
+}
